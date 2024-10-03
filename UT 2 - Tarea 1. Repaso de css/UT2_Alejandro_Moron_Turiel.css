@@ -1,0 +1,235 @@
+/*Alejandro Morón Turiel*/
+
+/*Ejercicio1*/
+#colores-fondos{
+
+    background: #b3e5fc;
+    opacity: 0.9;
+
+}
+
+/*Ejercicio2*/
+#tipografia h1{
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    font-weight: 100px;
+    line-height: 20px;
+
+}
+
+#tipografia h2{
+
+    font-family:monospace;
+    font-size: 60px;
+    font-weight: 80px;
+    line-height: 70px;
+
+}
+
+#tipografia p{
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 90px;
+    line-height: 70px;
+
+}
+
+/*Ejercicio3*/
+#espaciado{
+
+    align-content: center;
+    margin: 10px;
+    padding: 10px;
+    text-align:justify;
+
+}
+
+/*Ejercicio4*/
+#bordes-sombras{
+
+    border: 5px solid gray;
+    border-radius: 5px;
+    box-shadow: 3px 7px;
+
+}
+
+/*Ejercicio5*/
+#posicionamiento div{
+
+    position: relative;
+
+}
+
+#posicionamiento footer{
+
+    position: absolute;
+
+}
+
+/*Ejercicio6*/
+#productos{
+
+    list-style-image: url("imagenes/icono.png");
+    list-style-position: inside;
+
+}
+
+/*Ejercicio7*/
+#botones button{
+
+    background-color: aquamarine;
+    color:black;
+    border: #b3e5fc;
+    padding: auto;
+    border-radius: 10px;
+
+
+}
+
+/*Ejercicio8*/
+#tablas table{
+
+    background-color:lightblue;
+    border: black;
+    border-collapse: separate;
+    border: 2px solid black;
+
+}
+
+#tablas tr{
+
+    border: black;
+    border-collapse: separate;
+    border: 2px solid black;
+
+}
+
+#tablas td,th{
+
+    border: black;
+    border-collapse: separate;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid black;
+
+}
+
+/*Ejercicio9*/
+#contenedor li{
+
+    margin: 10px;
+    padding: 10px;
+
+}
+
+#contenedor p{
+
+    margin: 50px;
+    padding: 50px;
+
+}
+
+
+/*Ejercicio10*/
+#imagenes img{
+
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 700px;
+    height: 500px;
+
+}
+
+/*Ejercicio11*/
+#formulario textarea,input {
+
+    border: 2px solid black;
+    padding: 10px;
+    margin: 5px;
+    font-size: 20px;
+
+
+}
+
+#formulario label {
+
+    padding: 30px;
+    margin: 5px;
+    font-size: 50px;
+
+
+}
+
+#formulario button {
+
+    background-color: aquamarine;
+    color:black;
+    border: #b3e5fc;
+    margin: 50px;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+
+}
+
+/*Ejercicio12*/
+.imagenes img{
+
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 700px;
+    height: 500px;
+
+}
+
+/*Ejercicio13*/
+#enlaces a:hover{
+
+
+    color:brown; 
+    text-decoration:dotted;
+
+}
+
+#enlaces a{
+
+
+    color:black;
+    text-decoration: none;
+    
+}
+
+/*Ejercicio14*/
+
+#efectos-texto h3{
+
+    text-transform: lowercase;
+    letter-spacing: inherit;
+    text-shadow: 3px 3px greenyellow;
+
+}
+
+#efectos-texto p{
+
+    text-transform: uppercase;
+    letter-spacing: unset;
+    text-shadow: 2px 2px #558abb
+
+}
+
+/*Ejercicio15*/
+#contenedor1{
+
+    display: inline;
+
+}
+
+#contenedor1 .elemento{
+
+    display: inline-block;
+
+}
+
+/*Alejandro Morón Turiel*/
