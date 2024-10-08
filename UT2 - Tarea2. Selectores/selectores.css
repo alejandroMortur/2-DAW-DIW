@@ -1,0 +1,79 @@
+/*Fuente general*/
+* {
+
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+/*selecciones con identificador*/
+#main {
+
+    background-color: gray;
+    color: white;
+
+}
+
+/*seleccionando elementos con clase*/
+
+h1 ,.especial{
+
+    font-size: 40px;
+    color: blue ;
+   
+}
+
+h1{
+
+    color: black;
+
+}
+
+/*selección de varios elementos*/
+
+h2,h3{
+
+    border: 3px solid yellow;
+
+}
+
+/*dentro de otro*/
+ul>li {
+
+    color: red;
+
+}
+
+ul>li>ul>li{
+
+    color: green;
+
+}
+
+/*hijo directo*/
+body>.antes {
+
+    background-color: brown;
+    border: 3px solid yellow;
+
+}
+
+/*hijo directo imagen*/
+span>img{
+
+    border: 5px solid black;
+
+}
+
+img{
+
+    border: 5px solid red;
+
+}
+
+/*hijo directo despues*/
+p+h3 {
+
+    background-color: blue;
+    border: 3px solid yellow;
+
+}
