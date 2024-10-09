@@ -1,0 +1,121 @@
+/*diseño contennedor DIV*/
+.cta-container{
+
+    text-align: center;
+    background-image: url("fondo.jpg");
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    
+}
+
+/*Diseño parrafor texto*/
+h2{
+
+    position: relative;
+    top: 40%;
+    left: 18%;    
+    text-align: center;
+    font-size: 28px;
+    color:black; 
+    font-weight: bold;
+
+}
+
+p{
+
+    position: relative;
+    top: 40%;
+    left: 0%;
+    text-align: center;
+    font-size: 26px;
+    color: black;
+
+}
+
+/*Diseño boton*/
+.cta-button{
+
+    position: relative;
+    top: 40%;
+    left: 0%;
+    border-radius: 10px;
+    background-color: #626bb2;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+
+}
+
+/*Diseño boton hover*/
+.cta-button:hover{
+
+    position: relative;
+    top: 40%;
+    left: 0%;
+    border-radius: 10px;
+    background-color:blueviolet;
+    width: 300px;
+    height: 50px;
+    color: white;
+
+}
+
+/*///////////////////////////////////////////////////////////*/
+/*menu*/
+nav,ul{
+
+    margin: 0px;
+    background-color: black;
+    list-style: none;
+
+}
+
+ul{
+
+    margin:0;
+    padding:0;
+    
+}
+
+/*Diseño bloque li*/
+li{
+
+    float: right;
+    width: 150px;
+    height: 30px;
+    text-decoration: none;
+    background-color: black;
+    border-left: 1px solid #336699;
+
+    /* Margin: arriba izquierda abajo*/
+    padding: 10px 5px 10px 5px;
+
+}
+
+/*Diseño bloque li :hover*/
+li:hover{
+
+    color: white;
+    width: 150px;
+    height: 30px;
+    text-decoration: none;
+    background-color: #336699;
+    border-left: 1px solid #336699;
+
+}
+
+a{
+
+    color: white;
+
+}
+
+/*Aplicar last-child*/
+ul:last-child{
+
+    border-right: 0px none;
+
+}
