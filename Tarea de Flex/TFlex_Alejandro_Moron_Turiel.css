@@ -1,0 +1,144 @@
+/*Base CSS*/
+.contenedor_flex{
+
+    width: 500px;
+    height: 300px;
+    background-color: lightgrey;
+
+}
+
+.flex-item{
+
+    background-color: cornflowerblue;
+
+}
+
+/*//////////////////////////////////////////////////////////////*/
+
+/*Ejercicio1: */
+/*
+.contenedor_flex{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+
+}
+
+.flex-item{
+
+    width: 100px;
+    height: 70px;
+
+}
+
+*/
+
+/*//////////////////////////////////////////////////////////////*/
+
+/*Ejercicio2: */
+
+/*
+.contenedor_flex{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+
+}
+
+
+.flex-item{
+
+    height: 50px;
+
+}
+
+*/
+
+/*//////////////////////////////////////////////////////////////*/
+
+/*Ejercicio3: */
+/*
+.contenedor_flex{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.flex-item{
+
+    height: 50px;
+
+}*/
+
+/*//////////////////////////////////////////////////////////////*/
+
+/*Ejercicio4: */
+
+/*.contenedor_flex{
+
+    display: flex;
+    justify-content: center ;
+    flex-wrap: wrap;
+    gap: 4px 8px
+    
+}
+
+.flex-item{
+
+    width: 70px;
+
+}*/
+
+/*//////////////////////////////////////////////////////////////*/
+
+/*Ejercicio5: */
+
+/*
+.contenedor_flex{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flex-item{
+
+    height: 60px;
+    flex: 0 1 15%;
+    transition: all 0.5s;
+
+}
+
+.flex-item:hover{
+
+    height: 60px;
+    flex: 1 1 20%;
+    background-color: purple;
+
+}*/
+
+/*//////////////////////////////////////////////////////////////*/
+
+/*Ejercicio6: */
+
+.contenedor_flex{
+
+    display: flex;
+    flex-wrap: wrap;    
+    align-content: center;
+    row-gap: 20px;
+    column-gap: 20px;
+
+}
+
+
+.flex-item{
+
+    height: 50px;
+    width: 80px;
+
+}
