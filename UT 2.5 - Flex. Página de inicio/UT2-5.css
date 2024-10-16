@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+*{/*aplica sobre la pagina entera*/
+
+    box-sizing: border-box; /*evita mezclar los padding(espacio fuera) y margin(espacio interno) con la altura del elemento*/
+    margin: 0;
+    padding: 0;
+
+}
+
+:root{
+
+    /*variable global*/
+    --height-nav: 70px
+
+}
+
+body{
+
+    font-family: 'poppins',sans-serif; /*Importar fuente texto*/
+    background-color: #f2f2f2;
+
+}
+
+.contenedor{
+
+    background-color: #239B56;
+    color: #ffffff;
+    width: 100%;
+
+}
+
+.nav__contenedor{
+
+    display: flex; /*display de linea*/
+    justify-content: space-around; /*genera espacios a los lados de los elementos*/
+    align-items: center; /*centrar elementos eje x*/
+    height: 100%;
+
+}
+
+.cabecera{
+
+    margin: 0 auto;
+    max-width: 1200px; /*maximo al que el elemento puede escalar*/
+    width: 90%;
+    height: var(--height-nav);
+
+}
+
+.inicio{
+
+    display: flex;
+    /*vh son los pixeles vistos por el usuario en altura (height)*/
+    height: calc(100vh - var(--height-nav)); /*vh le resta el tamaño que ocupa la barra*/
+    align-items: center;/*alinea los elementos en el centro*/
+
+}
+
+.inicio__img{
+
+    width: 100%; /*ocupa todo el contenedor*/
+    border-radius: 33%;
+    display: block; /*ocupa todo lo que puede de su contenedor*/
+
+}
+
+.inicio__texto{
+
+    display: flex; 
+    flex-flow: row wrap; /*se coloca el contenido en columnas*/
+    flex-basis: 70%; /*dentro del bloque le obliga a ocupar el 70% del contenedor padre*/
+    align-items: start;
+    gap: 2px 0px /*Generar espacio de 2px*/
+
+}
+
+.inicio__figure{
+
+    flex-basis: 30%; /*dentro del bloque le obliga a ocupar el 30% del contenedor padre*/
+ 
+}
+
+.inicio__titulo{
+
+    font-size: 4vw; /*tamaño de texto a 4 view width (4 el tamaño base de la fuente por defecto)*/
+
+}
+
+.inicio__parrafo{
+
+    font-size: 2vw; /*tamaño de texto a 2 view width (2 el tamaño base de la fuente por defecto)*/
+
+}
+
+.btn-continuar{
+
+    font-size: 2vw; /*tamaño de texto a 2 view width (2 el tamaño base de la fuente por defecto)*/
+    background-color: #1E8449;
+    color: #ffffffff;
+    border-radius: 6px;
+    margin-top: 1.0em; /*1,5 más grande que el tamaño de la fuente estandar del contenedor donde esta*/
+    padding: 5px 10px;
+
+}
+
+a{
+
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.barra__enlaces{
+
+    display: flex;
+    gap: 5% 5%; /*Mete espaciado a los elementos de enlaces de la barra de menu*/
+
+}
