@@ -2,19 +2,20 @@
 
 :root{
 
-    --margin: 40px;
+    --margin: 40px; /*Variable Global de margen*/
 
 }
 
 /*///////////////(Bloque general tarjetas y body)///////////////////*/
 
-
 body{
 
     background-color: #f2f2f2;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-around; /* Distribuye el contenido con espacio alrededor */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+
+    /* Margen superior usando una variable CSS */
     margin-top: var(--margin);
 
 }
@@ -23,11 +24,11 @@ body{
 
     width: 80%;
     display: flex;
-    min-width: 400px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 50px;
-    justify-content: center;
+    min-width: 400px;/* Mínimo ancho que puede tener el contenedor */
+    flex-direction: row;/* Las tarjetas se colocarán en fila */
+    flex-wrap: wrap;/* Permite que las tarjetas se ajusten en múltiples filas si no caben en una sola */
+    column-gap: 50px;/* Espacio entre las columnas de tarjetas */
+    justify-content: center;/* Centra las tarjetas dentro del contenedor */
 
 }
 
@@ -36,16 +37,22 @@ body{
 .tarjeta__elemento{
 
     display: flex;
-    width: 300px;
-    min-width: 100px;
-    display: flex;
-    flex-flow: row wrap;
-    row-gap: 60px;
+    width: 300px; /* Ancho fijo de la tarjeta */
+    min-width: 100px; /* Ancho mínimo de la tarjeta para adaptarse a pantallas más pequeñas */
+    flex-flow: row wrap; /* Flex-flow para permitir que los elementos internos se organicen en fila y puedan envolver (ajustarse) */
+    row-gap: 60px; /* Espaciado entre las filas de elementos internos */
     justify-content: center;
     background-color: white;
-    border-radius: 3%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    margin-bottom: var(--margin);
+    border-radius: 3%; /* Bordes redondeados con un radio del 3% */
+
+    /* Sombra de caja compleja con múltiples niveles de opacidad y desplazamientos, para dar un efecto tridimensional */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+                rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+                rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+                rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    margin-bottom: var(--margin);/* Margen inferior utilizando una variable CSS */
 
 }
 
@@ -56,6 +63,8 @@ body{
     font-family: "Poppins", sans-serif;
     align-items: center;
     text-align: center;
+
+    /* Altura mínima del bloque de texto */
     min-height: 30px;
 
 }
@@ -70,12 +79,14 @@ body{
 
 img{
 
-    margin: 10px;
-    padding: 10px;
-    min-height: 10%;
-    min-width: 10%;
-    width: 100%;
-    height: 100%;
+    /* Margen externo  y espaciado interno de 10px alrededor de la imagen */
+    margin: 10px; 
+    padding: 10px; 
+
+    min-height: 10%; /* Altura mínima de la imagen establecida en un 10% del contenedor */
+    min-width: 10%; /* Ancho mínimo de la imagen establecido en un 10% del contenedor */
+    width: 100%;  /* La imagen ocupará el 100% del ancho disponible */
+    height: 100%; /* La imagen ocupará el 100% de la altura disponible */
 
 }
 
@@ -84,19 +95,19 @@ img{
 a{
 
     background-color: #1E8449;
-    width: 50%;
-    min-height: 30px;
+    width: 50%; /* El enlace ocupará el 50% del ancho del contenedor padre */
+    min-height: 30px; /* Altura mínima del enlace establecida en 30px */
     height: 30px;
     border-radius: 10%;
-    text-align: center;
+    text-align: center; /* Centra el texto dentro del enlace */
     text-decoration: none;
-    margin-bottom: 5%;
+    margin-bottom: 5%; /* Margen inferior de 5% para separar el enlace de otros elementos */
     color: white;
-    text-align: center;
 
 }
 
 .textoEnlace{
 
-    padding: 5px;
+    padding: 5px; /* Espaciado interno del texto dentro del enlace */
+
 }
