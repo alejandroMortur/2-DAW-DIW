@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+*{
+
+    box-sizing: border-box;
+
+}
+
+/*///////////////(Bloque body)///////////////////*/
+body{
+
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 30px;
+
+}
+
+/*///////////////(CSS Display bloque general pagina)///////////////////*/
+.cuerpo__general{
+
+    width: 90%;
+    background-color: #f2f2f2;
+    max-width: 1200px;
+
+}
+
+/*///////////////(CSS Display bloque de imagenes)///////////////////*/
+.contenedor__imagenes{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+
+/*///////////////(Css titulo)///////////////////*/
+.cuerpo__titulo{
+
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    padding: 1rem;
+
+}
+
+/*///////////////(CSS Display bloque imagen (marca ancho y alto mismas))///////////////////*/
+.contenedor__imagen{
+
+    min-width: 200px;
+    min-height: 200px;
+    width: 30%;
+    height: 200px;
+    margin: 10px;
+
+}
+
+/*///////////////(CSS general imagen)///////////////////*/
+.imagen__galeria{
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
