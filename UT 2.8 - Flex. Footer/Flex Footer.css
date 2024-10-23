@@ -1,0 +1,86 @@
+/*Import fuente Lato*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@300;400;500;700&display=swap');
+
+/*///////////////(CSS general)///////////////////*/
+*{
+
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/*///////////////(Bloque body)///////////////////*/
+body{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+
+}
+
+/*///////////////(Bloque texto página)///////////////////*/
+.cuerpo__texto{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+/*///////////////(Bloque footer)///////////////////*/
+.cuerpo__footer{
+
+    background-color: #555;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    padding: 20px;
+
+}
+
+/*///////////////(Contenido interno footer)///////////////////*/
+
+/*Bloque Izquierdo footer*/
+.footer__izquierdo{
+
+    display: flex;
+    flex: auto auto 200px;
+    flex-direction: column;
+    color: white;
+}
+
+/*Bloque Central footer*/
+.footer__central{
+
+    display: flex;
+    flex: auto auto 200px;
+    flex-direction: column;
+    color: white;
+
+}
+
+/*Bloque Derecho footer*/
+.footer__derecho{
+
+    display: flex;
+    flex: auto auto 200px;
+    flex-direction: column;
+    color: white;
+
+}
+
+/*Limpiado formato links*/
+a{
+
+    text-decoration: none;
+    color: white;
+
+}
