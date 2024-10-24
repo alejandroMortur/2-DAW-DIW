@@ -1,0 +1,455 @@
+*{
+
+    box-sizing: border-box;
+
+}
+
+body{
+
+    background-color: white;
+
+}
+/*//////////(Ejercicio1 primer Div)///////////*/
+/*
+.contenedor{
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border-radius: 10px;
+    width: 450px;
+    height: 200px;
+    border: 2px solid #f76707;
+    padding: 2px;
+
+}
+
+.campo{
+
+    background-color: #ffd8a8;
+    border: 2px solid #ffa94d;
+    border-radius: 10px;
+    color: #d9480f;
+    width: auto;
+    height: auto;
+    text-align: center;
+
+}
+*/
+
+/*//////////(Ejercicio2 primer Div)///////////*/
+/*
+.contenedor{
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border-radius: 10px;
+    width: 450px;
+    height: 200px;
+    border: 2px solid #f76707;
+    padding: 2px;
+
+}
+
+.campo__1{
+
+    background-color: #ffd8a8;
+    border: 2px solid #ffa94d;
+    border-radius: 10px;
+    color: #d9480f;
+    width: auto;
+    height: auto;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+
+.campo{
+
+    background-color: #ffd8a8;
+    border: 2px solid #ffa94d;
+    border-radius: 10px;
+    color: #d9480f;
+    width: auto;
+    height: auto;
+    text-align: center;
+
+}
+*/
+
+/*//////////(Ejercicio3 primer Div)///////////*/
+/*
+.contenedor{
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border-radius: 10px;
+    width: 450px;
+    height: 200px;
+    border: 2px solid #f76707;
+    padding: 2px;
+
+}
+
+.campo__1{
+
+    background-color: #ffd8a8;
+    border: 2px solid #ffa94d;
+    border-radius: 10px;
+    color: #d9480f;
+    width: auto;
+    height: auto;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+        <div class="campo">siete</div> width: auto;
+    height: auto;
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 6;
+        <div class="campo">siete</div>
+}
+
+.campo{
+
+    background-color: #ffd8a8;
+    border: 2px solid #ffa94d;
+    border-radius: 10px;
+    color: #d9480f;
+    width: auto;
+    height: auto;
+    text-align: center;
+
+}
+*/
+
+/*//////////(Ejercicio4 segundo Div)///////////*/
+/*
+.contenedor__2{
+
+    display: grid;
+    grid-template-columns: 100px auto auto;
+    border-radius: 10px;
+    width: 450px;
+    height: 200px;
+    border: 2px solid #f76707;
+    padding: 2px;
+    grid-template-areas: "cabecera cabecera cabecera"
+                         "sideBar campo1 campo2"
+                         "sideBar campo3 campo4";
+
+}
+
+.campo__cabecera{
+
+    background-color: #ffd8a8;
+    border: 2px solid #ffa94d;
+    border-radius: 10px;
+    color: #d9480f;
+    width: auto;
+    height: auto;
+    text-align: center;
+    grid-area: cabecera;
+
+}
+
+.campo_SideBar{
+
+    background-color: #ffd8a8;
+    border: 2px solid #ffa94d;
+    border-radius: 10px;
+    color: #d9480f;
+    width: auto;
+    height: auto;
+    text-align: center;
+    grid-area: sideBar;
+
+}
+
+.campo_col1{
+
+    background-color: #ffd8a8;
+    border: 2px solid #ffa94d;
+    border-radius: 10px;
+    color: #d9480f;
+    width: auto;
+    height: auto;
+    text-align: center;
+    grid-area: campo1;
+
+}
+
+.campo_col2{
+
+    background-color: #ffd8a8;
+    border: 2px solid #ffa94d;
+    border-radius: 10px;
+    color: #d9480f;
+    width: auto;
+    height: auto;
+    text-align: center;
+    grid-area: campo2;
+
+}
+
+.campo_col3{
+
+    background-color: #ffd8a8;
+    border: 2px solid #ffa94d;
+    border-radius: 10px;
+    color: #d9480f;
+    width: auto;
+    height: auto;
+    text-align: center;
+    grid-area: campo3;
+
+}
+
+.campo_col4{
+
+    background-color: #ffd8a8;
+    border: 2px solid #ffa94d;
+    border-radius: 10px;
+    color: #d9480f;
+    width: auto;
+    height: auto;
+    text-align: center;
+    grid-area: campo4;
+
+}
+*/
+
+/*//////////(Ejercicio5 segundo Div)///////////*/
+/*
+.contenedor__3{
+
+    display: grid;
+    grid-template-columns: 100px auto auto;
+    border-radius: 10px;
+    width: 450px;
+    height: 200px;
+    border: 2px solid #f76707;
+    padding: 2px;
+    grid-template-areas: "campo1 campo1 campo2 campo2"
+                         "campo3 campo4 campo4 campo4"
+                         "campo5 campo5 campo5 campo6";
+
+}
+
+.campo__1{
+
+    background-color: #ffd8a8;
+    border: 2px solid #ffa94d;
+    border-radius: 10px;
+    color: #d9480f;
+    width: auto;
+    height: auto;
+    text-align: center;
+    grid-area: campo1;
+
+}
+
+.campo__2{
+
+    background-color: #ffd8a8;
+    border: 2px solid #ffa94d;
+    border-radius: 10px;
+    color: #d9480f;
+    width: auto;
+    height: auto;
+    text-align: center;
+    grid-area: campo2;
+
+}
+
+.campo__3{
+
+    background-color: #ffd8a8;
+    border: 2px solid #ffa94d;
+    border-radius: 10px;
+    color: #d9480f;
+    width: auto;
+    height: auto;
+    text-align: center;
+    grid-area: campo3;
+
+}
+
+.campo__4{
+
+    background-color: #ffd8a8;
+    border: 2px solid #ffa94d;
+    border-radius: 10px;
+    color: #d9480f;
+    width: auto;
+    height: auto;
+    text-align: center;
+    grid-area: campo4;
+
+}
+
+.campo__5{
+
+    background-color: #ffd8a8;
+    border: 2px solid #ffa94d;
+    border-radius: 10px;
+    color: #d9480f;
+    width: auto;
+    height: auto;
+    text-align: center;
+    grid-area: campo5;
+
+}
+
+.campo__6{
+
+    background-color: #ffd8a8;
+    border: 2px solid #ffa94d;
+    border-radius: 10px;
+    color: #d9480f;
+    width: auto;
+    height: auto;
+    text-align: center;
+    grid-area: campo6;
+
+}
+*/
+
+/*//////////(Ejercicio6 segundo Div)///////////*/
+
+/*
+.contenedor__4{
+
+    display: grid;
+    grid-template-columns: 100px auto auto;
+    border-radius: 10px;
+    width: 450px;
+    height: 200px;
+    border: 2px solid #f76707;
+    padding: 2px;
+
+}
+
+.campo__1{
+
+    background-color: #ffd8a8;
+    border: 2px solid #ffa94d;
+    border-radius: 10px;
+    color: #d9480f;
+    width: auto;
+    height: auto;
+    text-align: center;
+    order: 2;
+
+}
+
+.campo{
+
+    background-color: #ffd8a8;
+    border: 2px solid #ffa94d;
+    border-radius: 10px;
+    color: #d9480f;
+    width: auto;
+    height: auto;
+    text-align: center;
+
+}*/
+
+/*//////////(Ejercicio7 segundo Div)///////////*/
+/*
+.contenedor__5{
+
+    display: grid;
+    grid-template-columns: 100px auto auto;
+    border-radius: 10px;
+    width: 450px;
+    height: 200px;
+    border: 2px solid #f76707;
+    padding: 2px;
+    grid-template-areas: "campo0 campo1 campo1"
+                         "campo2 campo3 campo3"
+                         "campo4 campo4 campo4";
+
+}
+
+.campo__1{
+
+    background-color: #ffd8a8;
+    border: 2px solid #ffa94d;
+    border-radius: 10px;
+    color: #d9480f;
+    width: auto;
+    height: auto;
+    text-align: center;
+    grid-area: campo1;
+
+}
+
+.campo__2{
+
+    background-color: #ffd8a8;
+    border: 2px solid #ffa94d;
+    border-radius: 10px;
+    color: #d9480f;
+    width: auto;
+    height: auto;
+    text-align: center;
+    grid-area: campo2;
+
+}
+
+.campo__3{
+
+    background-color: #ffd8a8;
+    border: 2px solid #ffa94d;
+    border-radius: 10px;
+    color: #d9480f;
+    width: auto;
+    height: auto;
+    text-align: center;
+    grid-area: campo3;
+
+}
+
+.campo__4{
+
+    background-color: #ffd8a8;
+    border: 2px solid #ffa94d;
+    border-radius: 10px;
+    color: #d9480f;
+    width: auto;
+    height: auto;
+    text-align: center;
+    grid-area: campo4;
+
+}
+*/
+
+/*//////////(Ejercicio7 segundo Div)///////////*/
+
+.contenedor__6{
+
+    display: grid;
+    border-radius: 10px;
+    grid-template-rows:3fr 3fr 3fr;
+    grid-auto-flow: column;
+    width: 450px;
+    height: 200px;
+    border: 2px solid #f76707;
+    padding: 2px;
+
+}
+
+.campo{
+
+    background-color: #ffd8a8;
+    border: 2px solid #ffa94d;
+    border-radius: 10px;
+    color: #d9480f;
+    width: auto;
+    height: auto;
+    text-align: center;
+
+}
