@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*////////(Css general body)///////////*/
+body{
+    color: white;
+    font-family: "Lato", serif;
+    background-color: #1D202B;
+}
+
+/*////////(Css imagenes generales)///////////*/
+#card1{
+    background-image: url('./img/1.jpg');
+    background-size: cover;/*Ajustado de la imagen al contenedor*/
+}
+#card2{
+    background-image: url('./img/2.jpg');
+    background-size: cover;/*Ajustado de la imagen al contenedor*/
+}
+#card3{
+    background-image: url('./img/3.jpg');
+    background-size: cover;/*Ajustado de la imagen al contenedor*/
+}
+#card4{
+    background-image: url('./img/4.jpg');
+    background-size: cover;/*Ajustado de la imagen al contenedor*/
+}
+#card5{
+    background-image: url('./img/5.jpg');
+    background-size: cover;/*Ajustado de la imagen al contenedor*/
+}
+#card6{
+    background-image: url('./img/6.jpg');
+    background-size: cover;/*Ajustado de la imagen al contenedor*/
+}
+#banner{
+    background-image: url('./img/banner.jpg');
+    background-size: cover;/*Ajustado de la imagen al contenedor*/
+}
+
+
+/*////////(Css contenedor general)///////////*/
+.contenedor{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 10px;
+    padding: 10px;
+}
+
+/*////////(media querry patalla Pc)///////////*/
+@media (min-width:900px) {
+    
+    .contenedor-conciertos{
+
+        display: grid;
+        gap: 10px 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+    
+    }
+
+}
+
+/*////////(media querry tablet)///////////*/
+@media (min-width:600px) and (max-width:899px) {
+    
+    .contenedor-conciertos{
+
+        display: grid;
+        gap: 10px 10px;
+        grid-template-columns: 1fr 1fr;
+    
+    }
+
+}
+
+/*////////(media querry moviles)///////////*/
+@media (max-width:599px) {
+    
+    .contenedor-conciertos{
+
+        display: grid;
+        gap: 10px 10px;
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+/*////////(CSs por tarjeta)///////////*/
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*////////(Css bloque texto)///////////*/
+.textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*////////(Css bloque banner)///////////*/
+.banner{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 20px;
+}
+
+/*////////(Css bloque banner boton)///////////*/
+.banner>button{
+    background-color: rgb(202, 189, 3);
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+}
+
+/*////////(Css bloque banner boton hover)///////////*/
+.banner>button:hover{
+    background-color:rgb(251, 255, 0);
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+}
+
+/*////////(Css bloque banner lista)///////////*/
+.banner>ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+
