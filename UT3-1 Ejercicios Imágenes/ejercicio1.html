@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Ejercicios Imágenes (mapa de bits)</title>
+</head>
+<body>
+    <p>Dobe:</p>
+    <figure>
+        <img src="imagenes/dobe.jpg" width="800" height="600"/>
+        <figcaption>Imagen 800x600</figcaption>
+    </figure>
+
+    <p>Michi:</p>
+    <picture>
+        <source srcset="imagenes/michi.webp" type="image/webp" />
+        <source srcset="imagenes/anime.png" type="image/png" />
+        <img src="imagenes/Maria.jpg"/>
+    </picture>
+
+    <p>Imagenes media querys:</p>
+    <picture>
+        <source srcset="imagenes/opciones/nemesis.jpg" width="300" height="300"media="(max-width: 350px)" />
+        <source srcset="imagenes/opciones/shinobu.jpg" width="600" height="600" media="(min-width: 351px) and (max-width: 1024px)"/>
+        <img src="imagenes/opciones/yukinoshita.jpg"  width="800" height="800"media="(min-width: 1024px)"/>
+    </picture>
+
+</body>
+</html>

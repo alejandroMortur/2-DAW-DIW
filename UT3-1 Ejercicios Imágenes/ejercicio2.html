@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Ejercicios Imágenes (Vectoriales)</title>
+</head>
+<body>
+    <p>Circulo:</p>
+    <svg height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+        <circle r="50" cx="100" cy="100"  />
+    </svg> 
+
+    <p>Circulo 2.0:</p>
+    <svg height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+        <circle r="50" cx="100" cy="100"  stroke="green" fill="red" />
+    </svg> 
+
+    <p>Cuadrado:</p>
+    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100" height="40" x="50" y="100" style="fill:rgb(0,0,255);stroke-width:3;" />
+    </svg> 
+
+    <p>Linea:</p>
+    <svg height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="0" x2="300" y2="200" style="stroke:yellow;stroke-width:2" />
+    </svg> 
+
+    <p>Pentágono:</p>
+    <svg height="400" width="350" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="150,1 250,70 202,184 100,184 50,70"
+        style="fill:lime;stroke:purple;stroke-width:3" />
+    </svg> 
+
+    <p>Línea múltiple compuesta:</p>
+    <svg height="500" width="500" xmlns="http://www.w3.org/2000/svg">
+        <polyline points="0,0 50,150 100,75 150,50 200,140 250,140"
+        style="fill:none;stroke:green;stroke-width:3" />
+    </svg> 
+
+    <p>Cosas colapsadas:</p>
+    <svg height="300" width="150" xmlns="http://www.w3.org/2000/svg">
+        <circle r="45" cx="50" cy="50" fill="red" />
+        <rect width="100" height="40" x="20" y="70" style="fill:rgb(0, 255, 0);stroke-width:3;" />
+        <ellipse rx="60" ry="20" cx="80" cy="60"
+        style="fill:rgb(4, 0, 255);stroke:rgb(0, 13, 128);stroke-width:3" />
+    </svg> 
+
+    <p>Rectángulo con un texto de título:</p>
+    <svg height="300" width="150" xmlns="http://www.w3.org/2000/svg">
+        <rect width="400" height="60" x="10" y="10" style="fill:rgb(255, 0, 0);stroke-width:3;" />
+        <text x="20" y="50" fill="pink" stroke="blue" font-size="25">I love SVG!</text>
+    </svg> 
+
+    <p>Texto linea:</p>
+    <svg height="250" width="150">
+        <text x="30" y="5" fill="red" font-size="25" transform="rotate(30 20,40)">I love SVG!</text>
+    </svg> 
+
+    <p>Multiples Elementos:</p>
+    <svg height="200" width="200">
+        <circle r="50" cx="50" cy="50" fill="red" />
+        <circle r="35" cx="80" cy="50" fill="pink" />
+        <circle r="45" cx="120" cy="50" fill="yellow" />
+        <rect width="200" height="70" x="20" y="70" style="fill:rgb(0, 255, 0);stroke-width:3;" />
+        <line x1="0" y1="0" x2="300" y2="200" style="stroke:rgb(0, 153, 255);stroke-width:3" />
+    </svg> 
+
+</body>
+</html>
