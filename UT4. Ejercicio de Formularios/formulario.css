@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+/*Css general body*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/*Css general formulario*/
+form {
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #ccc;
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/*Css label*/
+label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+    background-color: #ccc;
+}
+
+/*Css label hover*/
+label:hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+    background-color: #1243e4;
+}
+
+/*//////////////////////////////Css Campos validación///////////////////////////*/
+
+/*Css input en caso de ser valido*/
+input:valid {
+    height: 30px;
+    width: 180px;
+    background-color: #f6f6f6;
+}
+
+/*Css input en caso de no ser valido*/
+input:invalid {
+    height: 30px;
+    width: 180px;
+    background-color: #f6f6f6;
+    border: 2px solid red;
+}
+
+/*Css input edad en caso de fuera de rango*/
+#edad:out-of-range {
+    border: 2px solid red;
+}
+
+/*Css textarea valido*/
+textarea:valid {
+    resize: none;
+    height: 100px;
+    width: 100%;
+    background-color: #f6f6f6;
+}
+
+/*Css textarea  no valido*/
+textarea:invalid {
+    resize: none;
+    height: 100px;
+    width: 100%;
+    background-color: #f6f6f6;
+    border: 2px solid red;
+}
+
+/*/////////Botón formulario//////////*/
+
+/*Css general botón*/
+#submit_button {
+    margin-top: 10px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    height: 40px;
+}
+
+/*Css botón hover*/
+#submit_button:hover {
+    cursor: pointer;
+}
