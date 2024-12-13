@@ -48,7 +48,6 @@ body {
     font-size: 2rem;
     top: -0.75em;
     transition: 1s;
-
     transform: translateY(100px);
     opacity: 0;
     filter: blur(30px);
@@ -82,7 +81,7 @@ body {
 .box span:nth-child(3)::after {
     content: '5';
     position: absolute;
-    color: #1dff4e;
+    color: #1da5ff;
     transform: rotate(-45deg) translateY(200px);
     opacity: 0;
     filter: blur(30px);
