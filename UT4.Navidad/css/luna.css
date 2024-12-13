@@ -1,29 +1,40 @@
+/* Estilo para la clase .moon (la luna) */
 .moon {
-    position: fixed;
+    position: fixed; 
     top: 4%;
-    left: 84%;
-    z-index: -10;
-    width: 120px;
-    height: 120px;
+    left: 84%; 
+    z-index: -10; 
+    width: 120px; /* Define el ancho de la luna */
+    height: 120px; /* Define la altura de la luna */
 }
 
+/* Estilo para la imagen dentro de la luna */
 .moon img {
-    width: 100%;
-    height: 100%;
-    filter: blur(1px);
+    width: 100%; /* La imagen ocupa todo el espacio de su contenedor */
+    height: 100%; /* La imagen ocupa todo el espacio de su contenedor */
+    filter: blur(1px); /* Aplica un desenfoque leve a la imagen de la luna */
     z-index: -1;
 }
 
+/* Estilo para el halo de la luna (el resplandor que se ve alrededor de la luna) */
 .moon::after {
-    content: '';
-    position: absolute;
-    top: 50%;
+    
+    content: ''; 
+    position: absolute; 
+
+    /* Coloca el centro del halo en el centro de la luna */
+    top: 50%; 
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 190px; /* Tamaño del halo */
-    height: 190px;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0) 70%);
-    border-radius: 50%;
-    opacity: 0.8;
-    z-index: -1;
+    transform: translate(-50%, -50%); /* Ajusta el halo para que se centre perfectamente */
+
+    /* Define el tamaño del halo */
+    width: 190px; 
+    height: 190px; 
+
+    /* Gradiente radial, con el centro blanco (semi-transparente) que se difumina hacia el borde */
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0) 70%); 
+
+    border-radius: 50%; /* Hace que el halo tenga forma circular */
+    opacity: 0.8; 
+    z-index: -1; 
 }

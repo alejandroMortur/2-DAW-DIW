@@ -1,119 +1,127 @@
+/* Estilo general para el bloque de estrellas */
 .star-block{
-    transform: rotateZ(30deg);
+    transform: rotateZ(30deg); /* Rota el bloque de estrellas 30 grados */
     position: absolute;
     top: 4%;
     left: 10%;
 }
 
+/* Estilo individual para cada estrella */
 .star{
     position: absolute;
     left: 30%;
     top: 15%;
     height: 4px;
     width: 100px;
-    background: linear-gradient(-45deg, #5F91FF,rgba(0,0,255,0));
-    border-radius: 999px;
-    filter:  drop-shadow(0 0 6px #699BFF);
-    animation: tail 3s ease-in-out infinite, falling 3s ease-in-out infinite;
+    background: linear-gradient(-45deg, #5F91FF, rgba(0,0,255,0)); /* Gradiente de la estrella */
+    border-radius: 999px; /* Bordes redondeados para crear la forma de línea */
+    filter: drop-shadow(0 0 6px #699BFF); /* Sombra sutil para darle un efecto luminoso */
+    animation: tail 3s ease-in-out infinite, falling 3s ease-in-out infinite; /* Animaciones */
 }
 
-@keyframes tail{
-
-    0%{
-        width: 0px;
-    }
-    30%{
-        width: 100px;
-    }
-    100%{
-        width: 0px;
-    }
-
-}
-
-@keyframes falling{
-    0%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(300px);
-    }
-}
-
-.star::before, .star::after{
+/* Estilo para las partes brillantes de la estrella (antes y después de la estrella principal) */
+.star::before, .star::after {
     content: '';
     position: absolute;
-    top: calc(50% -2px);
+    top: calc(50% - 2px); /* Centra verticalmente */
     right: 0;
     height: 4px;
-    background: linear-gradient(-45deg, rgba(0,0,255,0),#5F91FF,rgba(0,0,255,0));
-    border-radius: 100%;
-    transform: translateX(50%) rotateZ(45deg);
-    animation: shining 3s ease-in-out infinite;
+    background: linear-gradient(-45deg, rgba(0,0,255,0), #5F91FF, rgba(0,0,255,0)); /* Gradiente de brillo */
+    border-radius: 100%; /* Hace que los bordes sean completamente redondeados */
+    transform: translateX(50%) rotateZ(45deg); /* Rota para formar una cruz */
+    animation: shining 3s ease-in-out infinite; /* Animación de destello */
 }
 
-@keyframes shining{
-    0%{
-        width: 0px;
+/* Cambia la dirección de rotación para la parte posterior de la estrella */
+.star::after {
+    transform: translateX(50%) rotateZ(-45deg); /* Rota en dirección opuesta a la parte anterior */
+}
+
+/* Estilo específico para cada estrella, ajustando su posición y el retraso de la animación */
+.star:nth-child(1) {
+    top: calc(50% - 100px); /* Posiciona la estrella 1 */
+    left: calc(50% -- 250px); /* Posiciona la estrella 1 */
+    animation-delay: 1.2s; /* Retrasa la animación de esta estrella */
+}
+
+.star:nth-child(1)::before, .star:nth-child(1)::after {
+    animation-delay: 1.2s; /* Retrasa el brillo de esta estrella */
+}
+
+.star:nth-child(2) {
+    top: calc(50% - 50px); /* Posiciona la estrella 2 */
+    left: calc(50% - 200px); /* Posiciona la estrella 2 */
+    animation-delay: 1s; /* Retrasa la animación de esta estrella */
+}
+
+.star:nth-child(2)::before, .star:nth-child(2)::after {
+    animation-delay: 1s; /* Retrasa el brillo de esta estrella */
+}
+
+.star:nth-child(3) {
+    top: calc(50% - 0px); /* Posiciona la estrella 3 */
+    left: calc(50% - 150px); /* Posiciona la estrella 3 */
+    animation-delay: 1.4s; /* Retrasa la animación de esta estrella */
+}
+
+.star:nth-child(3)::before, .star:nth-child(3)::after {
+    animation-delay: 1.4s; /* Retrasa el brillo de esta estrella */
+}
+
+.star:nth-child(4) {
+    top: calc(50% - -50px); /* Posiciona la estrella 4 */
+    left: calc(50% - 200px); /* Posiciona la estrella 4 */
+    animation-delay: 1.2s; /* Retrasa la animación de esta estrella */
+}
+
+.star:nth-child(4)::before, .star:nth-child(4)::after {
+    animation-delay: 1.2s; /* Retrasa el brillo de esta estrella */
+}
+
+.star:nth-child(5) {
+    top: calc(50% - -100px); /* Posiciona la estrella 5 */
+    left: calc(50% -- 250px); /* Posiciona la estrella 5 */
+    animation-delay: 1.8s; /* Retrasa la animación de esta estrella */
+}
+
+.star:nth-child(5)::before, .star:nth-child(5)::after {
+    animation-delay: 1.8s; /* Retrasa el brillo de esta estrella */
+}
+
+/*///////////(Animaciones)///////////*/
+
+/* Animación de brillo para las partes de la estrella */
+@keyframes shining {
+    0% {
+        width: 0px; /* Empieza con un ancho de 0 */
     }
-    50%{
-        width: 30px;
+    50% {
+        width: 30px; /* Se expande a su tamaño máximo */
     }
-   100%{
-        width: 0px;
-   }
+    100% {
+        width: 0px; /* Vuelve a un ancho de 0 */
+    }
 }
 
-.star::after{
-    transform: translateX(50%) rotateZ(-45deg);
+/* Animación para el rastro de la estrella */
+@keyframes tail {
+    0% {
+        width: 0px; /* Empieza con un ancho de 0 */
+    }
+    30% {
+        width: 100px; /* Se expande al tamaño completo */
+    }
+    100% {
+        width: 0px; /* Vuelve a un ancho de 0 */
+    }
 }
 
-.star:nth-child(1){
-    top: calc(50% - 100px);
-    left: calc(50% -- 250px);
-    animation-delay: 1.2s;
-}
-
-.star:nth-child(1)::before, .star:nth-child(1)::after{
-    animation-delay: 1.2s;
-}
-
-.star:nth-child(2){
-    top: calc(50% - 50px);
-    left: calc(50% - 200px);
-    animation-delay: 1s;
-}
-
-.star:nth-child(2)::before, .star:nth-child(2)::after{
-    animation-delay: 1s;
-}
-
-.star:nth-child(3){
-    top: calc(50% - 0px);
-    left: calc(50% - 150px);
-    animation-delay: 1.4s;
-}
-
-.star:nth-child(3)::before, .star:nth-child(3)::after{
-    animation-delay: 1.4s;
-}
-
-.star:nth-child(4){
-    top: calc(50% - -50px);
-    left: calc(50% - 200px);
-    animation-delay: 1.2s;
-}
-
-.star:nth-child(4)::before, .star:nth-child(4)::after{
-    animation-delay: 1.2s;
-}
-
-.star:nth-child(5){
-    top: calc(50% - -100px);
-    left: calc(50% -- 250px);
-    animation-delay: 1.8s;
-}
-
-.star:nth-child(5)::before, .star:nth-child(5)::after{
-    animation-delay: 1.8s;
+/* Animación para el movimiento de la estrella */
+@keyframes falling {
+    0% {
+        transform: translateX(0); /* Comienza en la posición original */
+    }
+    100% {
+        transform: translateX(300px); /* Se desplaza horizontalmente */
+    }
 }

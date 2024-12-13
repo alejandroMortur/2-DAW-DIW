@@ -1,95 +1,107 @@
+/* Resetea márgenes, padding y define el modelo de caja universal */
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box; /* Asegura que el padding y border no afecten el tamaño total del elemento */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Establece la fuente predeterminada */
 }
 
+/* Estilo para el body, centrado en pantalla */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    overflow: hidden;
-    background:  radial-gradient(ellipse at bottom, #0D1E31,#111);
-    z-index: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; /* Asegura que el contenido ocupe al menos el 100% de la altura de la pantalla */
+    overflow: hidden; /* Previene el desplazamiento de la página */
+    background: radial-gradient(ellipse at bottom, #0D1E31, #111); /* Fondo con un gradiente radial */
+    z-index: 0; 
 }
 
+/* Estilo para el contenedor de la caja */
 .box {
-    position: absolute;
-    cursor: pointer;
-    z-index: 3;
+    position: absolute; /* Posiciona la caja de forma absoluta */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar interactividad */
+    z-index: 3; /* Asegura que la caja esté por encima de otros elementos */
 }
 
+/* Estilo para el contenido de texto en el before del contenedor (Texto 'Adios') */
 .box::before {
-    content: 'Adios';
-    position: absolute;
-    width: 100%;
-    color: #fff;
-    text-align: center;
+    content: 'Adios'; 
+    position: absolute; 
+    width: 100%; /* Asegura que el texto ocupe todo el ancho de la caja */
+    color: #fff; 
+    text-align: center; 
     font-size: 2rem;
-    top: -0.75em;
-    transition: 1s;
+    top: -0.75em; /* Desplaza el texto ligeramente arriba de la caja */
+    transition: 1s; /* Aplica una transición suave de 1 segundo */
 }
 
+/* Estilo para el efecto hover sobre el contenido 'Adios' */
 .box:hover::before {
-    transform: translateY(-100px);
-    opacity: 0;
-    filter: blur(30px);
+    transform: translateY(-100px); /* Desplaza el texto hacia arriba cuando se pasa el ratón */
+    opacity: 0; 
+    filter: blur(30px); /* Aplica un desenfoque a medida que el texto desaparece */
 }
 
+/* Estilo para el contenido de texto en el after del contenedor (Texto 'Feliz Año Nuevo!!') */
 .box::after {
-    content: 'Feliz Año Nuevo!!';
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    color: #fff;
-    text-align: center;
-    font-size: 2rem;
-    top: -0.75em;
-    transition: 1s;
-    transform: translateY(100px);
-    opacity: 0;
-    filter: blur(30px);
+    content: 'Feliz Año Nuevo!!'; 
+    position: absolute; 
+    left: 0px; 
+    width: 100%; /* Asegura que el texto ocupe todo el ancho de la caja */
+    color: #fff; 
+    text-align: center; 
+    font-size: 2rem; 
+    top: -0.75em; /* Desplaza el texto ligeramente arriba de la caja */
+    transition: 1s; 
+    transform: translateY(100px); /* Inicialmente coloca el texto debajo de la caja */
+    opacity: 0; 
+    filter: blur(30px); /* Aplica un desenfoque al texto */
 }
 
+/* Estilo para el efecto hover sobre el contenido 'Feliz Año Nuevo!!' */
 .box:hover::after {
-    transform: translateY(0px);
-    opacity: 1;
-    filter: blur(0px);
+    transform: translateY(0px); /* Restaura el texto a su posición original */
+    opacity: 1; 
+    filter: blur(0px); /* Elimina el desenfoque */
 }
 
+/* Estilo para el primer <span> dentro de la caja */
 .box span {
-    display: inline-block;
-    color: #fff;
-    font-size: 10em;
-    font-weight: bold;
-    transition: 2s;
-    filter: blur(1px);
+    display: inline-block; 
+    color: #fff; 
+    font-size: 10em; 
+    font-weight: bold; 
+    transition: 2s; /* Aplica una transición suave de 2 segundos */
+    filter: blur(1px); /* Aplica un desenfoque inicial al texto */
 }
 
+/* Estilo específico para el último <span> dentro de la caja */
 .box span:last-child {
-    color: #ff236e;
+    color: #ff236e; /* Cambia el color del último span a un tono rosa */
 }
 
+/* Estilo cuando el ratón pasa sobre el contenedor */
 .box:hover span:last-child {
-    transform: rotate(45deg) translateY(-200px);
-    opacity: 0;
-    filter: blur(30px);
+    transform: rotate(45deg) translateY(-200px); /* Rota y mueve el último span hacia arriba */
+    opacity: 0; 
+    filter: blur(30px); /* Aplica un desenfoque al último span */
 }
 
+/* Estilo para el tercer <span> dentro de la caja */
 .box span:nth-child(3)::after {
-    content: '5';
+    content: '5'; 
     position: absolute;
-    color: #1da5ff;
-    transform: rotate(-45deg) translateY(200px);
-    opacity: 0;
-    filter: blur(30px);
-    transition: 2s;
+    color: #1da5ff; /* Establece el color azul para el número */
+    transform: rotate(-45deg) translateY(200px); /* Rota el número y lo coloca abajo */
+    opacity: 0; 
+    filter: blur(30px); /* Aplica un desenfoque al número */
+    transition: 2s; /* Aplica una transición suave de 2 segundos */
 }
 
+/* Estilo cuando el ratón pasa sobre el contenedor */
 .box:hover span:nth-child(3)::after {
-    transform: rotate(0deg) translateY(0px);
-    opacity: 1;
-    filter: blur(0px);
+    transform: rotate(0deg) translateY(0px); /* Restaura el número a su posición original */
+    opacity: 1; 
+    filter: blur(0px); /* Elimina el desenfoque */
 }
