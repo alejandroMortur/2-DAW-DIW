@@ -1,0 +1,16 @@
+
+/*Css en caso de tener valores incorrectos en el input*/
+input:invalid{
+    border: 2px solid red;
+}
+
+/*Css en caso de tener valores correctos en el input*/
+input:valid{
+    border: 2px solid green;
+}
+
+/*Css en caso de tener valores incorrectos en el input y con el foco en el*/
+input:invalid:focus {
+    outline: none;
+    box-shadow: 0 0 5px red;
+}
