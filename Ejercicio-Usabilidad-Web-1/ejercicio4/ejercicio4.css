@@ -1,0 +1,45 @@
+body{
+    margin: 20px;
+}
+
+table{
+    border-collapse: collapse; 
+    width: 80%;
+    text-align: left;
+}
+
+th,td{
+    padding: 14px; 
+    border: 1px solid #ccc; 
+}
+
+th{
+    font-size: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+h1{
+    font-size: 32px;
+    text-align: center;
+}
+
+h2{
+    font-size: 24px;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+p{
+    margin-bottom: 35px;
+}
